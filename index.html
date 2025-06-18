@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Smile - Your Trusted Dental Clinic</title>
+    <title>Dr. Anis Haffani - Votre Clinique Dentaire de Confiance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -14,8 +14,9 @@
         .font-playfair {
             font-family: 'Playfair Display', serif;
         }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/e0f2fe/3b82f6?text=Modern+Clinic');
+        /* Style for the hero background image */
+        .hero-background { 
+            background-image: url('dents.jpg'); /* Path to your image */
             background-size: cover;
             background-position: center;
         }
@@ -36,7 +37,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Timeline Styles */
         .timeline-item {
             position: relative;
             padding-left: 4rem;
@@ -48,7 +48,7 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: 24px; /* Centered with the icon */
+            left: 24px;
             top: 5px;
             width: 2px;
             height: 100%;
@@ -76,191 +76,157 @@
 </head>
 <body class="bg-slate-50 text-gray-800">
 
-    <!-- Header -->
     <header id="header" class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold text-cyan-600 font-playfair">
-                <i class="fas fa-tooth mr-2"></i>Dr. Smile
+                <i class="fas fa-tooth mr-2"></i>Dr. Anis Haffani
             </a>
             <div class="hidden lg:flex items-center space-x-8">
                 <a href="#services" class="text-gray-600 hover:text-cyan-500 transition duration-300">Services</a>
-                <a href="#about" class="text-gray-600 hover:text-cyan-500 transition duration-300">About</a>
-                <a href="#career" class="text-gray-600 hover:text-cyan-500 transition duration-300">Career</a>
+                <a href="#career" class="text-gray-600 hover:text-cyan-500 transition duration-300">Carrière</a>
                 <a href="#portfolio" class="text-gray-600 hover:text-cyan-500 transition duration-300">Portfolio</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-cyan-500 transition duration-300">Testimonials</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-cyan-500 transition duration-300">Témoignages</a>
                 <a href="#contact" class="text-gray-600 hover:text-cyan-500 transition duration-300">Contact</a>
             </div>
             <a href="#contact" class="hidden lg:block bg-cyan-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-cyan-600 transition duration-300 shadow-lg">
-                Book Appointment
+                Prendre Rendez-vous
             </a>
             <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white">
             <a href="#services" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Services</a>
-            <a href="#about" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">About</a>
-            <a href="#career" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Career</a>
+            <a href="#career" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Carrière</a>
             <a href="#portfolio" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Portfolio</a>
-            <a href="#testimonials" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Testimonials</a>
+            <a href="#testimonials" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Témoignages</a>
             <a href="#contact" class="block py-2 px-6 text-gray-600 hover:bg-cyan-50">Contact</a>
             <div class="px-6 py-4">
                  <a href="#contact" class="block w-full text-center bg-cyan-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-cyan-600 transition duration-300 shadow-lg">
-                    Book Appointment
-                </a>
+                    Prendre Rendez-vous
+                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center justify-center text-white pt-20">
-        <div class="text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-bold font-playfair mb-4 leading-tight shadow-text">Crafting Radiant Smiles, Inspiring Confidence</h1>
-            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Experience exceptional dental care in a modern, comfortable, and friendly environment. Your perfect smile awaits.</p>
+    <section class="hero-background relative h-screen flex items-center justify-center text-white pt-20 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+        <div class="relative text-center px-4 z-20">
+            <h1 class="text-5xl md:text-7xl font-bold font-playfair mb-4 leading-tight shadow-text">Créer des Sourires Radieux, Inspirer la Confiance</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Découvrez des soins dentaires exceptionnels dans un environnement moderne, confortable et convivial. Votre sourire parfait vous attend.</p>
             <a href="#services" class="bg-white text-cyan-600 font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition duration-300 text-lg shadow-xl transform hover:scale-105">
-                Explore Our Services
+                Découvrez Nos Services
             </a>
         </div>
     </section>
 
     <main>
-        <!-- Services Section -->
         <section id="services" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 fade-in">
-                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Our Premier Dental Services</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We offer a comprehensive range of services to meet all your dental needs.</p>
+                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Nos Services Dentaires de Premier Ordre</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Nous offrons une gamme complète de services pour répondre à tous vos besoins dentaires.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-tooth"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">General Dentistry</h3><p class="text-gray-600">From regular check-ups and cleanings to fillings and root canals, we ensure your oral health is at its best.</p></div>
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 200ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-smile-beam"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Cosmetic Dentistry</h3><p class="text-gray-600">Enhance your smile with our cosmetic treatments, including teeth whitening, veneers, and smile makeovers.</p></div>
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 400ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-bone"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Dental Implants</h3><p class="text-gray-600">Restore your smile's function and appearance with our durable and natural-looking dental implants.</p></div>
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 600ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-user-md"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Orthodontics</h3><p class="text-gray-600">Straighten your teeth and correct your bite with modern orthodontic solutions like braces and clear aligners.</p></div>
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 800ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-child"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Pediatric Dentistry</h3><p class="text-gray-600">Gentle and friendly dental care for your little ones to ensure a lifetime of healthy smiles.</p></div>
-                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 1000ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-first-aid"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Emergency Care</h3><p class="text-gray-600">We provide prompt and efficient care for dental emergencies to relieve pain and address urgent issues.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-tooth"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Dentisterie Générale</h3><p class="text-gray-600">Des contrôles et nettoyages réguliers aux plombages et traitements de canal, nous assurons la meilleure santé bucco-dentaire.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 200ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-smile-beam"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Dentisterie Cosmétique</h3><p class="text-gray-600">Améliorez votre sourire avec nos traitements cosmétiques, y compris le blanchiment des dents, les facettes et les transformations du sourire.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 400ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-bone"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Implants Dentaires</h3><p class="text-gray-600">Restaurez la fonction et l'apparence de votre sourire avec nos implants dentaires durables et d'aspect naturel.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 600ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-user-md"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Orthodontie</h3><p class="text-gray-600">Redressez vos dents et corrigez votre occlusion avec des solutions orthodontiques modernes comme les appareils dentaires et les aligneurs transparents.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 800ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-child"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Dentisterie Pédiatrique</h3><p class="text-gray-600">Des soins dentaires doux et amicaux pour vos petits afin d'assurer une vie de sourires sains.</p></div>
+                    <div class="service-card bg-slate-50 p-8 rounded-xl shadow-lg transition duration-300 fade-in" style="transition-delay: 1000ms;"><div class="text-cyan-500 text-5xl mb-6"><i class="fas fa-first-aid"></i></div><h3 class="text-2xl font-bold font-playfair mb-4">Soins d'Urgence</h3><p class="text-gray-600">Nous fournissons des soins rapides et efficaces pour les urgences dentaires afin de soulager la douleur et de traiter les problèmes urgents.</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="py-24 bg-slate-100">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <div class="lg:w-1/2 fade-in">
-                        <img src="https://placehold.co/600x600/dbeafe/3b82f6?text=Our+Friendly+Team" alt="Dental Team" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
-                    </div>
-                    <div class="lg:w-1/2 text-center lg:text-left fade-in" style="transition-delay: 200ms;">
-                        <h2 class="text-4xl font-bold font-playfair text-cyan-800 mb-6">Meet Your Dedicated Dental Team</h2>
-                        <p class="text-gray-600 mb-4 text-lg">At Dr. Smile, our team is our greatest asset. Led by Dr. Evelyn Reed, our staff of experienced and compassionate professionals is committed to providing you with personalized care. We believe in building lasting relationships with our patients based on trust and mutual respect.</p>
-                        <p class="text-gray-600 mb-8 text-lg">We stay at the forefront of dental technology and techniques to ensure you receive the best treatment possible. Your comfort and health are our top priorities.</p>
-                        <a href="#contact" class="bg-cyan-500 text-white font-semibold px-8 py-3 rounded-full hover:bg-cyan-600 transition duration-300 shadow-lg transform hover:scale-105">
-                            Learn More About Us
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Career History Section -->
-        <section id="career" class="py-24 bg-white">
+        <section id="career" class="py-24 bg-slate-100">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 fade-in">
-                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Our Doctor's Journey</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">A commitment to excellence in dentistry, from education to practice.</p>
+                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Le Parcours de Notre Docteur</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Un engagement envers l'excellence en dentisterie, de la formation à la pratique.</p>
                 </div>
                 <div class="max-w-3xl mx-auto fade-in" style="transition-delay: 200ms;">
                     <div class="relative">
-                        <!-- Timeline Item 1 -->
                         <div class="timeline-item">
                             <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                            <h3 class="text-xl font-bold text-gray-800">Doctor of Dental Surgery (DDS)</h3>
-                            <p class="font-semibold text-cyan-600">University of Dental Excellence (2010 - 2014)</p>
-                            <p class="text-gray-600 mt-2">Graduated with honors, receiving the prestigious Dean's Award for clinical excellence and patient care.</p>
+                            <h3 class="text-xl font-bold text-gray-800">Doctorat en Chirurgie Dentaire (DDS)</h3>
+                            <p class="font-semibold text-cyan-600">Université d'Excellence Dentaire (2010 - 2014)</p>
+                            <p class="text-gray-600 mt-2">Diplômé avec mention, recevant le prestigieux Prix du Doyen pour l'excellence clinique et les soins aux patients.</p>
                         </div>
-                        <!-- Timeline Item 2 -->
                         <div class="timeline-item">
                             <div class="timeline-icon"><i class="fas fa-award"></i></div>
-                            <h3 class="text-xl font-bold text-gray-800">Advanced Education in General Dentistry (AEGD)</h3>
-                            <p class="font-semibold text-cyan-600">SmileBright Institute (2014 - 2015)</p>
-                            <p class="text-gray-600 mt-2">Completed a comprehensive residency program focusing on complex restorative cases and cosmetic dentistry.</p>
+                            <h3 class="text-xl font-bold text-gray-800">Formation Supérieure en Dentisterie Générale</h3>
+                            <p class="font-semibold text-cyan-600">Institut SourireÉclatant (2014 - 2015)</p>
+                            <p class="text-gray-600 mt-2">A complété un programme de résidence complet axé sur les cas de restauration complexes et la dentisterie cosmétique.</p>
                         </div>
-                        <!-- Timeline Item 3 -->
                         <div class="timeline-item">
                             <div class="timeline-icon"><i class="fas fa-stethoscope"></i></div>
-                            <h3 class="text-xl font-bold text-gray-800">Associate Dentist</h3>
-                            <p class="font-semibold text-cyan-600">City Center Dental Group (2015 - 2018)</p>
-                            <p class="text-gray-600 mt-2">Honed skills in a fast-paced environment, gaining extensive experience in all facets of general and family dentistry.</p>
+                            <h3 class="text-xl font-bold text-gray-800">Dentiste Associé</h3>
+                            <p class="font-semibold text-cyan-600">Groupe Dentaire du Centre-Ville (2015 - 2018)</p>
+                            <p class="text-gray-600 mt-2">A perfectionné ses compétences dans un environnement dynamique, acquérant une vaste expérience dans toutes les facettes de la dentisterie générale et familiale.</p>
                         </div>
-                        <!-- Timeline Item 4 -->
                         <div class="timeline-item">
                             <div class="timeline-icon"><i class="fas fa-clinic-medical"></i></div>
-                            <h3 class="text-xl font-bold text-gray-800">Founder & Principal Dentist</h3>
-                            <p class="font-semibold text-cyan-600">Dr. Smile Dental Clinic (2018 - Present)</p>
-                            <p class="text-gray-600 mt-2">Established this practice with a vision to provide state-of-the-art, patient-centric dental care to the community.</p>
+                            <h3 class="text-xl font-bold text-gray-800">Fondateur et Dentiste Principal</h3>
+                            <p class="font-semibold text-cyan-600">Clinique Dentaire Dr. Anis Haffani (2018 - Aujourd'hui)</p>
+                            <p class="text-gray-600 mt-2">A établi ce cabinet avec la vision de fournir des soins dentaires de pointe, centrés sur le patient, à la communauté.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="py-24 bg-slate-100">
+        <section id="portfolio" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 fade-in">
-                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Success Stories</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Real results transforming smiles and lives.</p>
+                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Histoires de Succès</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">De vrais résultats qui transforment les sourires et les vies.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Story 1: Whitening -->
-                    <div class="story-card bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                    <div class="story-card bg-slate-50 rounded-xl shadow-lg overflow-hidden fade-in">
                         <div class="grid grid-cols-2">
-                            <img src="https://placehold.co/400x400/fef9c3/ca8a04?text=Before" alt="Before whitening" class="w-full h-48 object-cover">
-                            <img src="https://placehold.co/400x400/ecfdf5/059669?text=After" alt="After whitening" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/fef9c3/ca8a04?text=Avant" alt="Avant blanchiment" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/ecfdf5/059669?text=Après" alt="Après blanchiment" class="w-full h-48 object-cover">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-playfair mb-2">Professional Teeth Whitening</h3>
-                            <p class="text-gray-600">A single session of our in-office whitening treatment dramatically brightened this patient's smile, removing years of stains.</p>
+                            <h3 class="text-xl font-bold font-playfair mb-2">Blanchiment des Dents Professionnel</h3>
+                            <p class="text-gray-600">Une seule séance de notre traitement de blanchiment en cabinet a éclairci de manière spectaculaire le sourire de ce patient, enlevant des années de taches.</p>
                         </div>
                     </div>
-                    <!-- Story 2: Implants -->
-                    <div class="story-card bg-white rounded-xl shadow-lg overflow-hidden fade-in" style="transition-delay: 200ms;">
+                    <div class="story-card bg-slate-50 rounded-xl shadow-lg overflow-hidden fade-in" style="transition-delay: 200ms;">
                         <div class="grid grid-cols-2">
-                            <img src="https://placehold.co/400x400/fee2e2/b91c1c?text=Before" alt="Before implant" class="w-full h-48 object-cover">
-                            <img src="https://placehold.co/400x400/dbeafe/1e40af?text=After" alt="After implant" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/fee2e2/b91c1c?text=Avant" alt="Avant implant" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/dbeafe/1e40af?text=Après" alt="Après implant" class="w-full h-48 object-cover">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-playfair mb-2">Dental Implant Restoration</h3>
-                            <p class="text-gray-600">A missing front tooth was replaced with a durable, natural-looking implant, fully restoring function and confidence.</p>
+                            <h3 class="text-xl font-bold font-playfair mb-2">Restauration par Implant Dentaire</h3>
+                            <p class="text-gray-600">Une dent de devant manquante a été remplacée par un implant durable et d'aspect naturel, restaurant entièrement la fonction et la confiance.</p>
                         </div>
                     </div>
-                    <!-- Story 3: Veneers -->
-                    <div class="story-card bg-white rounded-xl shadow-lg overflow-hidden fade-in" style="transition-delay: 400ms;">
+                    <div class="story-card bg-slate-50 rounded-xl shadow-lg overflow-hidden fade-in" style="transition-delay: 400ms;">
                          <div class="grid grid-cols-2">
-                            <img src="https://placehold.co/400x400/ede9fe/6d28d9?text=Before" alt="Before veneers" class="w-full h-48 object-cover">
-                            <img src="https://placehold.co/400x400/e0f2fe/0891b2?text=After" alt="After veneers" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/ede9fe/6d28d9?text=Avant" alt="Avant facettes" class="w-full h-48 object-cover">
+                            <img src="https://placehold.co/400x400/e0f2fe/0891b2?text=Après" alt="Après facettes" class="w-full h-48 object-cover">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-playfair mb-2">Porcelain Veneers Makeover</h3>
-                            <p class="text-gray-600">Custom porcelain veneers were used to correct chips, gaps, and discoloration, creating a flawless, harmonious smile.</p>
+                            <h3 class="text-xl font-bold font-playfair mb-2">Transformation avec Facettes en Porcelaine</h3>
+                            <p class="text-gray-600">Des facettes en porcelaine sur mesure ont été utilisées pour corriger les éclats, les espaces et la décoloration, créant un sourire impeccable et harmonieux.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-24 bg-white">
+        <section id="testimonials" class="py-24 bg-slate-100">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 fade-in">
-                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">What Our Patients Say</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We are proud of the smiles we've created and the positive feedback we've received.</p>
+                    <h2 class="text-4xl font-bold font-playfair text-cyan-800">Ce que Disent Nos Patients</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Nous sommes fiers des sourires que nous avons créés et des retours positifs que nous avons reçus.</p>
                 </div>
                 <div class="relative overflow-hidden fade-in">
                     <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
-                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=S.J." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"The best dental experience I've ever had! The staff is incredibly friendly and professional. I felt comfortable and well-cared for from start to finish. My smile has never looked better!"</p><h4 class="font-bold text-cyan-700 text-xl">- Sarah Johnson</h4></div></div>
-                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=M.D." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"Dr. Smile's clinic is state-of-the-art, and their attention to detail is remarkable. I came for a dental implant, and the process was seamless and painless. Highly recommended!"</p><h4 class="font-bold text-cyan-700 text-xl">- Michael Davis</h4></div></div>
-                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=E.C." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"I used to be anxious about visiting the dentist, but not anymore. The team at Dr. Smile is so gentle and understanding. They transformed my view on dental care."</p><h4 class="font-bold text-cyan-700 text-xl">- Emily Carter</h4></div></div>
+                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=S.D." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"La meilleure expérience dentaire que j'aie jamais eue ! Le personnel est incroyablement amical et professionnel. Je me suis sentie à l'aise et bien soignée du début à la fin. Mon sourire n'a jamais été aussi beau !"</p><h4 class="font-bold text-cyan-700 text-xl">- Sophie Dubois</h4></div></div>
+                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=M.L." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"La clinique du Dr. Anis Haffani est à la pointe de la technologie, et leur attention aux détails est remarquable. Je suis venu pour un implant dentaire, et le processus s'est déroulé sans heurts et sans douleur. Fortement recommandé !"</p><h4 class="font-bold text-cyan-700 text-xl">- Michel Lambert</h4></div></div>
+                        <div class="testimonial-card flex-shrink-0 w-full px-4"><div class="bg-slate-50 rounded-xl p-8 shadow-lg max-w-3xl mx-auto text-center"><img src="https://placehold.co/100x100/ffffff/3b82f6?text=E.L." class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-cyan-200"><p class="text-gray-600 italic text-lg mb-4">"J'avais l'habitude d'être anxieuse à l'idée d'aller chez le dentiste, mais plus maintenant. L'équipe du Dr. Anis Haffani est si douce et compréhensive. Ils ont transformé ma vision des soins dentaires."</p><h4 class="font-bold text-cyan-700 text-xl">- Émilie Leclerc</h4></div></div>
                     </div>
                     <button id="prev-testimonial" class="absolute top-1/2 left-0 md:left-16 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-3 text-cyan-600 shadow-md"><i class="fas fa-chevron-left"></i></button>
                     <button id="next-testimonial" class="absolute top-1/2 right-0 md:right-16 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-3 text-cyan-600 shadow-md"><i class="fas fa-chevron-right"></i></button>
@@ -269,32 +235,31 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-24 bg-cyan-700 text-white">
             <div class="container mx-auto px-6">
                  <div class="text-center mb-16 fade-in">
-                    <h2 class="text-4xl font-bold font-playfair">Get In Touch</h2>
-                    <p class="mt-4 max-w-2xl mx-auto">Have questions or want to schedule an appointment? Reach out to us!</p>
+                    <h2 class="text-4xl font-bold font-playfair">Contactez-Nous</h2>
+                    <p class="mt-4 max-w-2xl mx-auto">Vous avez des questions ou souhaitez prendre rendez-vous ? Contactez-nous !</p>
                 </div>
                 <div class="flex flex-col lg:flex-row gap-12">
                     <div class="lg:w-1/2 bg-white text-gray-800 p-8 rounded-xl shadow-2xl fade-in">
-                        <h3 class="text-2xl font-bold font-playfair text-cyan-800 mb-6">Send Us a Message</h3>
+                        <h3 class="text-2xl font-bold font-playfair text-cyan-800 mb-6">Envoyez-Nous un Message</h3>
                         <form id="contact-form">
-                            <div class="mb-4"><label for="name" class="block text-gray-600 mb-2">Name</label><input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" required></div>
-                             <div class="mb-4"><label for="email" class="block text-gray-600 mb-2">Email</label><input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" required></div>
+                            <div class="mb-4"><label for="name" class="block text-gray-600 mb-2">Nom</label><input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" required></div>
+                             <div class="mb-4"><label for="email" class="block text-gray-600 mb-2">E-mail</label><input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" required></div>
                              <div class="mb-4"><label for="message" class="block text-gray-600 mb-2">Message</label><textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" required></textarea></div>
-                            <button type="submit" class="w-full bg-cyan-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-cyan-600 transition duration-300 shadow-lg">Send Message</button>
+                            <button type="submit" class="w-full bg-cyan-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-cyan-600 transition duration-300 shadow-lg">Envoyer le Message</button>
                         </form>
                         <div id="form-feedback" class="mt-4 text-center"></div>
                     </div>
                     <div class="lg:w-1/2 fade-in" style="transition-delay: 200ms;">
-                         <h3 class="text-2xl font-bold font-playfair mb-6">Contact Information</h3>
-                         <p class="mb-6 text-lg">We're located in the heart of the city, ready to welcome you. Find us here or give us a call.</p>
+                         <h3 class="text-2xl font-bold font-playfair mb-6">Informations de Contact</h3>
+                         <p class="mb-6 text-lg">Nous sommes situés au cœur de la ville, prêts à vous accueillir. Trouvez-nous ici ou appelez-nous.</p>
                          <div class="space-y-6">
-                            <div class="flex items-start gap-4"><i class="fas fa-map-marker-alt text-3xl text-cyan-300 mt-1"></i><div><h4 class="font-semibold text-xl">Address</h4><p>123 Dental Avenue, Smile City, ST 12345</p></div></div>
-                            <div class="flex items-start gap-4"><i class="fas fa-phone text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">Phone</h4><p>(123) 456-7890</p></div></div>
-                            <div class="flex items-start gap-4"><i class="fas fa-envelope text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">Email</h4><p>contact@drsmile.com</p></div></div>
-                            <div class="flex items-start gap-4"><i class="fas fa-clock text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">Opening Hours</h4><p>Mon - Fri: 9:00 AM - 6:00 PM</p><p>Sat: 10:00 AM - 4:00 PM</p></div></div>
+                            <div class="flex items-start gap-4"><i class="fas fa-map-marker-alt text-3xl text-cyan-300 mt-1"></i><div><h4 class="font-semibold text-xl">Adresse</h4><p>123 Avenue Dentaire, Ville du Sourire, QC 12345</p></div></div>
+                            <div class="flex items-start gap-4"><i class="fas fa-phone text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">Téléphone</h4><p>(123) 456-7890</p></div></div>
+                            <div class="flex items-start gap-4"><i class="fas fa-envelope text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">E-mail</h4><p>contact@dranishaffani.com</p></div></div>
+                            <div class="flex items-start gap-4"><i class="fas fa-clock text-3xl text-cyan-300"></i><div><h4 class="font-semibold text-xl">Heures d'Ouverture</h4><p>Lun - Ven : 9h00 - 18h00</p><p>Sam : 10h00 - 16h00</p></div></div>
                          </div>
                     </div>
                 </div>
@@ -302,14 +267,12 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-6 text-center">
-            <a href="#" class="text-3xl font-bold text-white font-playfair"><i class="fas fa-tooth mr-2"></i>Dr. Smile</a>
+            <a href="#" class="text-3xl font-bold text-white font-playfair"><i class="fas fa-tooth mr-2"></i>Dr. Anis Haffani</a>
             <div class="my-6 space-x-6">
                  <a href="#services" class="hover:text-cyan-400 transition">Services</a>
-                 <a href="#about" class="hover:text-cyan-400 transition">About</a>
-                 <a href="#career" class="hover:text-cyan-400 transition">Career</a>
+                 <a href="#career" class="hover:text-cyan-400 transition">Carrière</a>
                  <a href="#portfolio" class="hover:text-cyan-400 transition">Portfolio</a>
                  <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
             </div>
@@ -318,7 +281,7 @@
                 <a href="#" class="text-2xl hover:text-cyan-400 transition"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="text-2xl hover:text-cyan-400 transition"><i class="fab fa-twitter"></i></a>
              </div>
-            <p>&copy; <span id="year"></span> Dr. Smile. All Rights Reserved. Designed with care.</p>
+            <p>&copy; <span id="year"></span> Dr. Anis Haffani. Tous Droits Réservés. Conçu avec soin.</p>
         </div>
     </footer>
 
@@ -419,7 +382,7 @@
             if(contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    formFeedback.textContent = 'Thank you for your message! We will get back to you soon.';
+                    formFeedback.textContent = 'Merci pour votre message ! Nous vous recontacterons bientôt.';
                     formFeedback.className = 'mt-4 text-center text-green-700 font-semibold bg-green-100 p-3 rounded-lg';
                     contactForm.reset();
                     setTimeout(() => {
